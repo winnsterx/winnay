@@ -1,13 +1,14 @@
-import React from 'react';
-import logo from './logo.svg';
-import winnay from './winnay.jpg'
-import './App.css';
+import React from "react";
+import logo from "./logo.svg";
+import Desktop from "./components/Desktop";
+import "./App.css";
 
 function App() {
   return (
     <div className="App">
-      <p>Welcome to Winnay's World</p>
-      <img src={winnay} width="500" />
+      <main>
+        <Desktop />
+      </main>
     </div>
   );
 }
