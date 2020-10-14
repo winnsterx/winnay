@@ -3,7 +3,7 @@ import uw from "../images/uw1.jpg";
 
 function Exhibition() {
   return (
-    <div className="Exhibition">
+    <div className="exhibition">
       {/* Use React Router to turn image into a link */}
       <img
         src={uw}
@@ -13,7 +13,9 @@ function Exhibition() {
           borderRadius: "1%",
           position: "absolute",
           top: "40px",
-          right: "540px",
+          left: "40px",
+          right: "60px",
+          bottom: "0px",
         }}
       />
     </div>

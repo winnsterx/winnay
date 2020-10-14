@@ -3,7 +3,7 @@ import github from "../images/github.jpg";
 
 function Software() {
   return (
-    <div className="Software">
+    <div className="software">
       <img
         src={github}
         alt="Github"
@@ -11,8 +11,11 @@ function Software() {
         style={{
           borderRadius: "1%",
           position: "absolute",
-          top: "5px",
-          left: "450px",
+          right: "10px",
+          left: "530px",
+          top: "2px",
+          bottom: "0px",
+          // Specifying all 4 directions gives absolute position
         }}
       />
     </div>
