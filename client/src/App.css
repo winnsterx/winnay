@@ -50,17 +50,21 @@ body,
 .Desktop {
   display: flex;
   justify-content: center;
+  align-self: flex-end;
 }
 
-/* .Dock {
-  width: 50%;
-  margin: 0 auto;
-} */
+.dock {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  align-self: flex-end;
+}
 
 .DockBg {
   background-color: #ccc;
   opacity: 0.6;
-
   border-radius: 4px 4px 0 0;
   box-shadow: 1px 1px 50px 4px rgba(0, 0, 0, 0.8);
+}
+.DockItem {
+  padding: 7px;
 }

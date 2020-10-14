@@ -12,28 +12,32 @@ import terminal from "../images/dock_images/terminal.png";
 import Exhibition from "./Exhibition";
 import Software from "./Software";
 
-const items = [note, mail, spotify, nord, book, firefox, terminal, directory];
+const items = [note, mail, spotify, nord, book, terminal, firefox, directory];
 
 function Desktop() {
   return (
     <div className="Desktop">
-      {/* <Software />
-      <Exhibition /> */}
-
-      <Dock
-        className="Dock"
-        backgroundClassName="DockBg"
-        width={500}
-        magnification={1}
-        magnifyDirection="up"
-        debug
-      >
-        {items.map((item, index) => (
-          <Dock.Item key={index} onClick={() => console.log(item)}>
-            <img src={item} alt="dock" />
-          </Dock.Item>
-        ))}
-      </Dock>
+      {/* <Software /> */}
+      <Exhibition />
+      <div className="dock">
+        <Dock
+          backgroundClassName="DockBg"
+          width={580}
+          magnification={0.5}
+          magnifyDirection="up"
+          // debug
+        >
+          {items.map((item, index) => (
+            <Dock.Item
+              className="DockItem"
+              key={index}
+              onClick={() => console.log(item)}
+            >
+              <img src={item} alt="dock" />
+            </Dock.Item>
+          ))}
+        </Dock>
+      </div>
     </div>
   );
 }
