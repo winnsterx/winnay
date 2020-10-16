@@ -26,6 +26,55 @@ const items = [
   trash,
 ];
 
+function sendEmail() {
+  alert("Send Winnie an Email");
+}
+
+function showLocation() {
+  alert("Current location: Amsterdam, The Netherlands");
+}
+
+function showSpotify() {
+  alert("Redirecting you to my spotify profile...");
+  window.open(
+    "https://open.spotify.com/user/22ctqoguz67sek7vnsdtc7emy?si=ipLGymXZQ_25lvguqawj6w"
+  );
+}
+
+function showBooks() {
+  alert("Books im reading");
+}
+
+function showWritings() {
+  alert("writings. restricted section.");
+}
+
+function selectMethod(e) {
+  let index = parseInt(e.target.id);
+  switch (index) {
+    case 0:
+    case 1:
+      showWritings();
+      break;
+    case 2:
+      sendEmail();
+      break;
+    case 3:
+      showSpotify();
+      break;
+    case 4:
+      showLocation();
+      break;
+    case 5:
+      showBooks();
+      break;
+    case 6:
+    case 7:
+    case 8:
+    case 9:
+  }
+}
+
 function DockContainer() {
   return (
     <div className="dock">
@@ -37,12 +86,14 @@ function DockContainer() {
         // debug
       >
         {items.map((item, index) => (
-          <Dock.Item
-            className="dock-item"
-            key={index}
-            onClick={() => console.log(item)}
-          >
-            <img className="dock-img" src={item} alt="dock" />
+          <Dock.Item className="dock-item" key={index}>
+            <img
+              className="dock-img"
+              id={index}
+              src={item}
+              alt={item}
+              onClick={(e) => selectMethod(e)}
+            />
           </Dock.Item>
         ))}
       </Dock>
