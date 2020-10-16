@@ -6,12 +6,14 @@
     "@testing-library/jest-dom": "^4.2.4",
     "@testing-library/react": "^9.3.2",
     "@testing-library/user-event": "^7.1.2",
+    "antd": "^4.7.0",
     "emailjs-com": "^2.6.3",
     "prettier": "^2.1.2",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
     "react-osx-dock": "^1.0.0",
-    "react-scripts": "3.4.3"
+    "react-scripts": "3.4.3",
+    "reactjs-popup": "^2.0.4"
   },
   "scripts": {
     "start": "react-scripts start",

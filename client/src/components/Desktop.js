@@ -13,9 +13,9 @@ function Desktop() {
   return (
     <div className="Desktop">
       {/* <Top /> */}
-      {email ? <Email /> : null}
-      <Software />
-      <Exhibition />
+      {email ? <Email email={email} setEmail={setEmail} /> : null}
+      {/* <Software />
+      <Exhibition /> */}
       <DockContainer setEmail={setEmail} />
     </div>
   );

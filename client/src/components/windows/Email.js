@@ -1,8 +1,16 @@
-import React from "react";
+import React, { useEffect } from "react";
+import Popup from "reactjs-popup";
 import emailjs from "emailjs-com";
+import { Modal, Button, Form, Input } from "antd";
 
-function Email() {
-  function sendEmail(e) {
+import "reactjs-popup/dist/index.css";
+
+function Email({ email, setEmail }) {
+  useEffect(() => {
+    console.log("hello");
+  });
+
+  function submitEmail(e) {
     console.log("Submitted email");
     e.preventDefault();
 
@@ -18,17 +26,26 @@ function Email() {
       );
   }
 
+  function cancelEmail() {
+    console.log("cancel email");
+  }
+
   return (
-    <form className="contact-form" onSubmit={sendEmail}>
-      <input type="hidden" name="contact_number" />
-      <label>Name</label>
-      <input type="text" name="user_name" />
-      <label>Email</label>
-      <input type="email" name="user_email" />
-      <label>Message</label>
-      <textarea name="message" />
-      <input type="submit" value="Send" />
-    </form>
+    <div className="Email">
+      <Modal
+        title="Send Email"
+        visible={email}
+        onOk={submitEmail}
+        onCancel={cancelEmail}
+      >
+        {/* <Form id="sendemail">
+          <Form.Item label="Email Address" name="addr">
+            <Input />
+          </Form.Item>
+        </Form> */}
+        <p>Modal</p>
+      </Modal>
+    </div>
   );
 }
 
