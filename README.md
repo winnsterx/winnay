@@ -1,8 +1,7 @@
 ### Next Steps
-
-- Flesh out the design of Desktop (think of how Dock, Exhibition, and Software interact)
+- Debug modal form visibility issue
+- Setup EmailJS with form
 - Design current exhibition
-- Setup deployment (allows better bug isolation)
 
 ### Content of the site
 
