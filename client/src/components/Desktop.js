@@ -1,16 +1,22 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 
 import Exhibition from "./Exhibition";
 import Software from "./Software";
 import DockContainer from "./DockContainer";
-import Top from "./Top";
+import Email from "./windows/Email";
+
+// import Top from "./Top";
+
 function Desktop() {
+  const [email, setEmail] = useState(false);
+
   return (
     <div className="Desktop">
       {/* <Top /> */}
+      {email ? <Email /> : null}
       <Software />
       <Exhibition />
-      <DockContainer />
+      <DockContainer setEmail={setEmail} />
     </div>
   );
 }
