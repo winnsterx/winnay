@@ -30,7 +30,7 @@ function DockContainer() {
   return (
     <div className="dock">
       <Dock
-        backgroundClassName="DockBg"
+        backgroundClassName="dock-bg"
         width={800}
         magnification={0.5}
         magnifyDirection="up"
@@ -38,11 +38,11 @@ function DockContainer() {
       >
         {items.map((item, index) => (
           <Dock.Item
-            className="DockItem"
+            className="dock-item"
             key={index}
             onClick={() => console.log(item)}
           >
-            <img src={item} alt="dock" />
+            <img className="dock-img" src={item} alt="dock" />
           </Dock.Item>
         ))}
       </Dock>

@@ -69,12 +69,17 @@ body,
   position: absolute;
 }
 
-.DockBg {
+.dock-bg {
   background-color: #ccc;
   opacity: 0.6;
   border-radius: 4px 4px 0 0;
   box-shadow: 1px 1px 50px 4px rgba(0, 0, 0, 0.8);
 }
-.DockItem {
+.dock-item {
   padding: 7px;
+}
+
+.dock-img {
+  max-width: 100%;
+  max-height: 100%;
 }
