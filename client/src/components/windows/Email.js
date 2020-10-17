@@ -9,9 +9,9 @@ function Email({ email, setEmail }) {
     console.log("Email state: ", email);
   });
 
-  function submitEmail() {
-    console.log("Submitted email");
-    // e.preventDefault();
+  function submitEmail(e) {
+    e.preventDefault();
+    console.log("Submitted email", console.log(e));
 
     // emailjs
     //   .sendForm("YOUR_SERVICE_ID", "YOUR_TEMPLATE_ID", e.target, "YOUR_USER_ID")
@@ -31,24 +31,28 @@ function Email({ email, setEmail }) {
     setEmail(false);
   }
 
-  function trigger() {
-    if (email) {
-      setEmail(false);
-    } else {
-      setEmail(true);
-    }
-  }
-
   return (
     <div className="Email">
       <Modal
         visible={email}
-        onOk={() => submitEmail()}
+        onOk={(e) => submitEmail(e)}
         onCancel={() => cancelEmail()}
-        okText="Send Email"
-        cancelText="Discard"
+        footer={[
+          <Button key="cancel" onClick={() => cancelEmail()}>
+            Cancel
+          </Button>,
+          <Button
+            type="primary"
+            form="myEmail"
+            key="submit"
+            htmlType="submit"
+            onClick={() => submitEmail()}
+          >
+            Send Email
+          </Button>,
+        ]}
       >
-        <Form name="email">
+        <Form id="myEmail" name="email">
           <br /> <br />
           <Form.Item label="From" name="addr">
             <Input />
