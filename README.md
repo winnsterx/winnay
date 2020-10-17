@@ -1,9 +1,42 @@
-### Next Steps
-- Debug modal form visibility issue
-- Setup EmailJS with form
-- Design current exhibition
+## Roadmap
 
-### Content of the site
+- [x] Email address, msg values retrieval upon form submission
+- [x] Setup EmailJS with form
+- [ ] Design current exhibition
+- [ ] Setting up VPN modal page
+- [x] Beautify design of email
+- [ ] Setting up loading page for Desktop
+- [ ] Update site logo.favicon
+
+
+
+## Iteration 1
+
+1. Partially functional Dock
+   - Email Me
+   - Spotify
+   - VPN, my current location
+2. Curated exhibition 
+   - Need to think of focus
+3. Loading page (analogous to Mac)
+4. Adding classic / customised Desktop background
+5. Speed up the loading of images 
+
+
+
+## Iteration 2
+
+1. Protected writing section (writings.winnay.com) 
+
+   - "Use password or hack me ;]"
+
+2. Making window components draggable (/ closable)
+
+3. Populating dock functions
+
+   
+
+## Content of the site
 
 Philosophy: concise, clear identity that displays strength and edge
 

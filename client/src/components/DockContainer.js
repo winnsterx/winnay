@@ -74,6 +74,7 @@ function DockContainer({ setEmail }) {
       case 7:
       case 8:
       case 9:
+      default:
     }
   }
   return (
