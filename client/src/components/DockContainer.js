@@ -28,7 +28,7 @@ const items = [
 
 function DockContainer({ setEmail }) {
   function sendEmail() {
-    alert("Send Winnie an Email");
+    // alert("Send Winnie an Email");
     setEmail(true);
   }
 
