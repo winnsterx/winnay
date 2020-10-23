@@ -10,7 +10,7 @@ function Software({ setGithub }) {
         setVisible={setGithub}
         url="https://github.com/winnayx"
       >
-        <img src={github} alt="Github" width="700px" />
+        <img src={github} alt="Github" width="600px" />
       </BrowserFrame>
     </div>
   );

@@ -8,7 +8,7 @@ function Exhibition({ setExhibit }) {
       <BrowserFrame visible={true} setVisible={setExhibit}>
         {/* Use React Router to turn image into a link */}
         <a href="https://artxspot.winnay.com">
-          <img src={uw} alt="current exhibition: to come!" width="680px" />
+          <img src={uw} alt="current exhibition: to come!" width="600px" />
         </a>
       </BrowserFrame>
     </div>
