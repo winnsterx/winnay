@@ -26,14 +26,15 @@ const items = [
   trash,
 ];
 
-function DockContainer({ setEmail }) {
+function DockContainer({ setEmail, setVpn }) {
   function sendEmail() {
     // alert("Send Winnie an Email");
     setEmail(true);
   }
 
   function showLocation() {
-    alert("Current location: Amsterdam, The Netherlands");
+    console.log("Setting Location");
+    setVpn(true);
   }
 
   function showSpotify() {

@@ -2,11 +2,10 @@ import React, { useState } from "react";
 import BrowserFrame from "react-browser-frame";
 import map from "../../images/map.png";
 
-function Vpn() {
-  const [vpn, setVpn] = useState(true);
+function Vpn({ vpn, setVpn }) {
   return (
     <BrowserFrame
-      url="PROTECTED:// Netherlands #885"
+      url="Currently://Amsterdam, The Netherlands"
       visible={vpn}
       setVisible={setVpn}
     >
@@ -15,7 +14,10 @@ function Vpn() {
         alt="map"
         width="710px"
         height="380px"
-        style={{ borderRadius: "5px" }}
+        style={{
+          borderBottomLeftRadius: "5px",
+          borderBottomRightRadius: "5px",
+        }}
       />
     </BrowserFrame>
   );

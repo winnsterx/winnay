@@ -14,13 +14,11 @@ function Desktop() {
 
   return (
     <div className="Desktop">
-      {/* <Top />
       {email ? <Email email={email} setEmail={setEmail} /> : null}
+      {vpn && <Vpn vpn={vpn} setVpn={setVpn} />}
       <Software />
       <Exhibition />
-      <DockContainer setEmail={setEmail} />
-      {vpn ? <Vpn /> : null} */}
-      <Vpn />
+      <DockContainer setEmail={setEmail} setVpn={setVpn} />
     </div>
   );
 }

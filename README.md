@@ -3,7 +3,7 @@
 - [x] Email address, msg values retrieval upon form submission
 - [x] Setup EmailJS with form
 - [ ] Design current exhibition
-- [ ] Setting up VPN modal page
+- [x] Setting up VPN modal page
 - [x] Beautify design of email
 - [ ] Setting up loading page for Desktop
 - [ ] Update site logo.favicon
