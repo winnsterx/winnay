@@ -33,10 +33,11 @@ function Email({ email, setEmail }) {
         <Form
           name="myEmail"
           onFinish={(mail) => submitEmail(mail)}
+          colon={false}
           style={{ marginTop: "25px" }}
         >
           <h3 style={{ fontFamily: "tabular-nums", marginLeft: "28px" }}>
-            To: mail.winnay@gmail.com
+            Drop something in my inbox!
           </h3>
           <br />
           <Form.Item
@@ -61,17 +62,16 @@ function Email({ email, setEmail }) {
           </Form.Item>
           <Form.Item
             label="8 + 13 = "
-            colon={false}
             name="check"
             rules={[
               {
                 required: true,
-                pattern: "21",
+                pattern: /^21$/,
                 message: "Wrong math!",
               },
             ]}
           >
-            <Input />
+            <Input placeholder="Good Bot or Botched Bot?" />
           </Form.Item>
           <Form.Item>
             <Button type="primary" htmlType="submit" style={{ float: "right" }}>

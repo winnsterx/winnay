@@ -12,6 +12,10 @@ body,
   height: 100%;
 }
 
+.browser-frame {
+  height: 426px;
+}
+
 .Desktop {
   /* background-color: pink; */
 }

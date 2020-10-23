@@ -37,7 +37,6 @@ function DockContainer({ setEmail }) {
   }
 
   function showSpotify() {
-    alert("Redirecting you to my spotify profile...");
     window.open(
       "https://open.spotify.com/user/22ctqoguz67sek7vnsdtc7emy?si=ipLGymXZQ_25lvguqawj6w"
     );

@@ -8,10 +8,10 @@
     "@testing-library/react": "^9.3.2",
     "@testing-library/user-event": "^7.1.2",
     "antd": "^4.7.0",
-    "bootstrap": "^4.5.3",
     "emailjs-com": "^2.6.3",
     "prettier": "^2.1.2",
     "react": "^16.13.1",
+    "react-browser-frame": "https://github.com/winnayx/react-browser-frame.git",
     "react-dom": "^16.13.1",
     "react-osx-dock": "^1.0.0",
     "react-scripts": "3.4.3",
@@ -21,9 +21,7 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject",
-    "storybook": "start-storybook -p 6006 -s public",
-    "build-storybook": "build-storybook -s public"
+    "eject": "react-scripts eject"
   },
   "eslintConfig": {
     "extends": "react-app"
@@ -42,12 +40,6 @@
   },
   "devDependencies": {
     "@babel/core": "^7.12.0",
-    "@storybook/addon-actions": "^6.0.26",
-    "@storybook/addon-essentials": "^6.0.26",
-    "@storybook/addon-links": "^6.0.26",
-    "@storybook/node-logger": "^6.0.26",
-    "@storybook/preset-create-react-app": "^3.1.4",
-    "@storybook/react": "^6.0.26",
     "babel-loader": "^8.1.0",
     "react-is": "^16.13.1"
   }
