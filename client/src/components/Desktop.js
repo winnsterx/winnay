@@ -6,18 +6,18 @@ import DockContainer from "./DockContainer";
 import Email from "./windows/Email";
 import Vpn from "./windows/Vpn";
 
-// import Top from "./Top";
-
 function Desktop() {
   const [email, setEmail] = useState(false);
   const [vpn, setVpn] = useState(false);
+  const [exhibit, setExhibit] = useState(true);
+  const [github, setGithub] = useState(true);
 
   return (
     <div className="Desktop">
-      {email ? <Email email={email} setEmail={setEmail} /> : null}
+      {github && <Software setGithub={setGithub} />}
+      {exhibit && <Exhibition setExhibit={setExhibit} />}
+      {email && <Email email={email} setEmail={setEmail} />}
       {vpn && <Vpn vpn={vpn} setVpn={setVpn} />}
-      <Software />
-      <Exhibition />
       <DockContainer setEmail={setEmail} setVpn={setVpn} />
     </div>
   );

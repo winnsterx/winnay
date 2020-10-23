@@ -1,23 +1,17 @@
 import React from "react";
+import BrowserFrame from "react-browser-frame";
 import github from "../images/github.jpg";
 
-function Software() {
+function Software({ setGithub }) {
   return (
     <div className="software">
-      <img
-        src={github}
-        alt="Github"
-        width="700"
-        style={{
-          borderRadius: "1%",
-          position: "absolute",
-          right: "10px",
-          left: "530px",
-          top: "2px",
-          bottom: "0px",
-          // Specifying all 4 directions gives absolute position
-        }}
-      />
+      <BrowserFrame
+        visible={true}
+        setVisible={setGithub}
+        url="https://github.com/winnayx"
+      >
+        <img src={github} alt="Github" width="700px" />
+      </BrowserFrame>
     </div>
   );
 }

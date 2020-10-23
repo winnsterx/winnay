@@ -5,19 +5,42 @@ body,
 #root,
 .App,
 .Desktop,
-.software,
-.exhibition,
 .Email {
   width: 100%;
   height: 100%;
 }
 
-.browser-frame {
-  height: 426px;
+.exhibit {
+  position: fixed;
+  top: 50%;
+  left: 30%;
+  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
 }
 
-.Desktop {
-  /* background-color: pink; */
+.vpn {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+}
+
+.software {
+  position: fixed;
+  top: 40%;
+  left: 70%;
+  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
 }
 
 .Email {
@@ -37,15 +60,6 @@ body,
 }
 
 .browser-frame {
-  position: fixed;
-  top: 50%;
-  left: 60%;
-  transform: translate(-50%, -50%);
-  -webkit-transform: translate(-50%, -50%);
-  -moz-transform: translate(-50%, -50%);
-  -o-transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
-  z-index: 10;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
@@ -88,17 +102,13 @@ body,
   display: flex;
   justify-content: center;
   align-self: flex-end;
+  background-color: pink;
 }
 
 .dock {
   display: grid;
   grid-template-columns: auto auto auto;
   align-self: flex-end;
-}
-
-.software,
-.exhibition {
-  position: absolute;
 }
 
 .dock-bg {
