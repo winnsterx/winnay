@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import Exhibition from "./Exhibition";
 import Software from "./Software";
 import DockContainer from "./DockContainer";
+import Loading from "./Loading";
 import Email from "./windows/Email";
 import Vpn from "./windows/Vpn";
 
@@ -20,7 +21,8 @@ function Desktop() {
 
   return (
     <div className="Desktop">
-      {loading ? (
+      <Loading />
+      {/* {loading ? (
         <p>Loading</p>
       ) : (
         <div className="Desktop">
@@ -30,7 +32,7 @@ function Desktop() {
           {vpn && <Vpn vpn={vpn} setVpn={setVpn} />}
           <DockContainer setEmail={setEmail} setVpn={setVpn} />
         </div>
-      )}
+      )} */}
     </div>
   );
 }
