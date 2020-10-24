@@ -1,14 +1,20 @@
 ## Roadmap
 
 - [x] Email address, msg values retrieval upon form submission
+
 - [x] Setup EmailJS with form
-- [ ] Design current exhibition
+
 - [x] Setting up VPN modal page
+
 - [x] Beautify design of email
-- [ ] Setting up loading page for Desktop
-- [ ] Update site logo.favicon
 
+- [x] Update site logo.favicon
 
+- [x] Setting up loading page for Desktop
+
+- [ ] Design current exhibition
+
+  
 
 ## Iteration 1
 

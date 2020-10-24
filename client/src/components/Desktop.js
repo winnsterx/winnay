@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useState } from "react";
 import Exhibition from "./Exhibition";
 import Software from "./Software";
 import DockContainer from "./DockContainer";
@@ -13,27 +13,19 @@ function Desktop() {
   const [exhibit, setExhibit] = useState(true);
   const [github, setGithub] = useState(true);
 
-  useEffect(() => {
-    setTimeout(() => {
-      setLoading(false);
-    }, 500);
-  });
-
-  return (
+  return loading ? (
+    <Loading setLoading={setLoading} />
+  ) : (
     <div className="Desktop">
-      <Loading />
-      {/* {loading ? (
-        <p>Loading</p>
-      ) : (
-        <div className="Desktop">
-          {github && <Software setGithub={setGithub} />}
-          {exhibit && <Exhibition setExhibit={setExhibit} />}
-          {email && <Email email={email} setEmail={setEmail} />}
-          {vpn && <Vpn vpn={vpn} setVpn={setVpn} />}
-          <DockContainer setEmail={setEmail} setVpn={setVpn} />
-        </div>
-      )} */}
+      ​ {github && <Software setGithub={setGithub} />}​{" "}
+      {exhibit && <Exhibition setExhibit={setExhibit} />}​{" "}
+      {email && <Email email={email} setEmail={setEmail} />}​{" "}
+      {vpn && <Vpn vpn={vpn} setVpn={setVpn} />}
+      ​ <DockContainer setEmail={setEmail} setVpn={setVpn} />​{" "}
     </div>
   );
+
+  // return <Loading setLoading={setLoading} />;
 }
+
 export default Desktop;
