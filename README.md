@@ -12,8 +12,9 @@
 
 - [x] Setting up loading page for Desktop
 
-- [ ] Design current exhibition
+- [x] Design current exhibition
 
+- [x] Added Desktop background
   
 
 ## Iteration 1

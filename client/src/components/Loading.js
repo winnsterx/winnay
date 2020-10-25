@@ -9,8 +9,8 @@ function Loading({ setLoading }) {
     console.log("Use Effect in Loading called");
     if (percent < 180) {
       setInterval(() => {
-        setPercent((percent) => percent + 20);
-      }, 1000);
+        setPercent((percent) => percent + 10);
+      }, 500);
     } else {
       setLoading(false);
     }
@@ -24,7 +24,7 @@ function Loading({ setLoading }) {
         percent={percent}
         strokeWidth="2"
         trailWidth="2"
-        strokeColor="teal"
+        strokeColor="white"
         trailColor="rgba(162, 169, 171, 0.6)"
         strokeLinecap="round"
         style={{

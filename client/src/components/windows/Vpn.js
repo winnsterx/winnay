@@ -1,6 +1,6 @@
 import React from "react";
 import BrowserFrame from "react-browser-frame";
-import map from "../../images/map.png";
+import map from "../../images/map.jpg";
 
 function Vpn({ vpn, setVpn }) {
   return (

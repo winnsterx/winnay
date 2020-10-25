@@ -103,7 +103,8 @@ body,
   display: flex;
   justify-content: center;
   align-self: flex-end;
-  background-color: rgba(255, 183, 208);
+  background: url(images/desktop.jpg);
+  background-size: cover;
 }
 
 .loading {
@@ -111,20 +112,21 @@ body,
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  background-color: rgba(255, 183, 208, 0.6);
+  background: url(images/desktop-blur.jpg);
+  background-size: cover;
 }
 
 .profile-circular {
   width: 100px;
   border-radius: 50%;
-  opacity: 1;
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.8);
 }
 
 .username {
   letter-spacing: 0.1em;
-  margin-top: 0.6em;
-  color: whitesmoke;
+  margin-top: 1em;
+  margin-bottom: 1em;
+  color: white;
   font-weight: 800;
 }
 
