@@ -21,6 +21,7 @@
 3. Populating dock functions
 4. Add preview to reopen windows
 5. Add features to react-browser-frame
+6. Incorporate react-tetris as dock component
 
 
 
