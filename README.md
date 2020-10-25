@@ -1,23 +1,30 @@
 ## Roadmap
 
 - [x] Email address, msg values retrieval upon form submission
-
-- [x] Setup EmailJS with form
-
-- [x] Setting up VPN modal page
-
+- [x] Set up EmailJS with form
+- [x] Set up VPN modal page
 - [x] Beautify design of email
-
 - [x] Update site logo.favicon
-
-- [x] Setting up loading page for Desktop
-
+- [x] Set up loading page for Desktop
 - [x] Design current exhibition
+- [x] Add Desktop background
+- [x] Speed up loading of images
 
-- [x] Added Desktop background
-  
 
-## Iteration 1
+
+## v1.1
+
+1. Protected writing section (writings.winnay.com) 
+
+   - "Use password or hack me ;]"
+2. Making window components draggable (/ closable)
+3. Populating dock functions
+4. Add preview to reopen windows
+5. Add features to react-browser-frame
+
+
+
+## v1.0
 
 1. Partially functional Dock
    - Email Me
@@ -29,19 +36,7 @@
 4. Adding classic / customised Desktop background
 5. Speed up the loading of images 
 
-
-
-## Iteration 2
-
-1. Protected writing section (writings.winnay.com) 
-
-   - "Use password or hack me ;]"
-
-2. Making window components draggable (/ closable)
-
-3. Populating dock functions
-
-   
+ 
 
 ## Content of the site
 
