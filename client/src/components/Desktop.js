@@ -5,6 +5,7 @@ import DockContainer from "./DockContainer";
 import Loading from "./Loading";
 import Email from "./windows/Email";
 import Vpn from "./windows/Vpn";
+import TetrisContainer from "./TetrisContainer";
 
 function Desktop() {
   const [loading, setLoading] = useState(true);
@@ -13,19 +14,25 @@ function Desktop() {
   const [exhibit, setExhibit] = useState(true);
   const [github, setGithub] = useState(true);
 
-  return loading ? (
-    <Loading setLoading={setLoading} />
-  ) : (
-    <div className="Desktop">
-      ​ {github && <Software setGithub={setGithub} />}​{" "}
-      {exhibit && <Exhibition setExhibit={setExhibit} />}​{" "}
-      {email && <Email email={email} setEmail={setEmail} />}​{" "}
-      {vpn && <Vpn vpn={vpn} setVpn={setVpn} />}
-      ​ <DockContainer setEmail={setEmail} setVpn={setVpn} />​{" "}
-    </div>
-  );
+  // return loading ? (
+  //   <Loading setLoading={setLoading} />
+  // ) : (
+  //   <div className="Desktop">
+  //     ​ {github && <Software setGithub={setGithub} />}​{" "}
+  //     {exhibit && <Exhibition setExhibit={setExhibit} />}​{" "}
+  //     {email && <Email email={email} setEmail={setEmail} />}​{" "}
+  //     {vpn && <Vpn vpn={vpn} setVpn={setVpn} />}
+  //     ​ <DockContainer setEmail={setEmail} setVpn={setVpn} />​{" "}
+  //   </div>
+  // );
 
   // return <Loading setLoading={setLoading} />;
+
+  return (
+    <div className="Desktop">
+      <TetrisContainer />
+    </div>
+  );
 }
 
 export default Desktop;

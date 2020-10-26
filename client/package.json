@@ -16,6 +16,7 @@
     "react-dom": "^16.13.1",
     "react-osx-dock": "^1.0.0",
     "react-scripts": "3.4.3",
+    "react-tetris": "^0.1.2",
     "reactjs-popup": "^2.0.4"
   },
   "scripts": {
