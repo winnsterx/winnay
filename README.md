@@ -4,7 +4,7 @@
 - [ ] Redirect bohemianbiotch.com to www.*
 - [ ] Add Preview in Dock to reopen Exhibition
 - [ ] Add Firefox to reopen Github
-- [ ] Incorporate react-tetris
+- [x] Incorporate react-tetris
 - [ ] Brainstorm details and concept of exhibit (name, idea, medium, curation)
 - [ ] Complete primary rendition of exhibit
 - [x] Email address, msg values retrieval upon form submission
