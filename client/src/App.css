@@ -33,6 +33,18 @@ body,
   -ms-transform: translate(-50%, -50%);
 }
 
+.tetris-container {
+  background-color: teal;
+  position: fixed;
+  top: 45%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+}
+
 .software {
   position: fixed;
   top: 48%;
@@ -169,8 +181,8 @@ body,
 .game-block {
   margin: 0;
   padding: 0;
-  width: 1.5em;
-  height: 1.5em;
+  width: 1.3em;
+  height: 1.3em;
   border: 1px solid #ddd;
 }
 

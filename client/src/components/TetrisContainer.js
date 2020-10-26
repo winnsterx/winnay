@@ -3,10 +3,10 @@ import BrowserFrame from "react-browser-frame";
 
 import Tetris from "react-tetris";
 
-function TetrisContainer() {
+function TetrisContainer({ tetris, setTetris }) {
   return (
-    <BrowserFrame visible={true}>
-      <div className="tetris-container">
+    <div className="tetris-container">
+      <BrowserFrame visible={tetris} setVisible={setTetris}>
         <h1 id="tetris-header">TETRIS YOURSELF</h1>
         <p style={{ color: "white", fontWeight: "300" }}>
           (as opposed to Tetris Friends)
@@ -19,7 +19,7 @@ function TetrisContainer() {
                 <HeldPiece />
                 <div className="game-stats">
                   <p className="points">POINTS: {points}</p>
-                  <p className="cleared">LINES CLEARED: {linesCleared}</p>
+                  <p className="cleared">CLEARED: {linesCleared}</p>
                 </div>
               </div>
               <Gameboard />
@@ -27,8 +27,8 @@ function TetrisContainer() {
             </div>
           )}
         </Tetris>
-      </div>
-    </BrowserFrame>
+      </BrowserFrame>
+    </div>
   );
 }
 

@@ -8,6 +8,7 @@ import spotify from "../images/dock_images/spotify.png";
 import nord from "../images/dock_images/nord.png";
 import directory from "../images/dock_images/directory.png";
 import firefox from "../images/dock_images/firefox.png";
+import tetris from "../images/dock_images/tetris.png";
 import terminal from "../images/dock_images/terminal.png";
 import trash from "../images/dock_images/trash.png";
 
@@ -20,11 +21,12 @@ const items = [
   nord,
   terminal,
   firefox,
+  tetris,
   directory,
   trash,
 ];
 
-function DockContainer({ setEmail, setVpn }) {
+function DockContainer({ setEmail, setVpn, setTetris }) {
   function sendEmail() {
     // alert("Send Winnie an Email");
     setEmail(true);
@@ -49,6 +51,10 @@ function DockContainer({ setEmail, setVpn }) {
     alert("writings. restricted section.");
   }
 
+  function showTetris() {
+    setTetris(true);
+  }
+
   function selectMethod(e) {
     let index = parseInt(e.target.id);
     switch (index) {
@@ -70,6 +76,8 @@ function DockContainer({ setEmail, setVpn }) {
         break;
       case 6:
       case 7:
+        showTetris();
+        break;
       case 8:
       case 9:
       default:
