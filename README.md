@@ -1,5 +1,12 @@
 ## Roadmap
-
+- [ ] Add protected writing section
+- [ ] Integrate www.bohemianbiotch.com in Dock
+- [ ] Redirect bohemianbiotch.com to www.*
+- [ ] Add Preview in Dock to reopen Exhibition
+- [ ] Add Firefox to reopen Github
+- [ ] Incorporate react-tetris
+- [ ] Brainstorm details and concept of exhibit (name, idea, medium, curation)
+- [ ] Complete primary rendition of exhibit
 - [x] Email address, msg values retrieval upon form submission
 - [x] Set up EmailJS with form
 - [x] Set up VPN modal page
