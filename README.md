@@ -1,7 +1,7 @@
 ## Roadmap
 - [ ] Add protected writing section
 - [ ] Integrate www.bohemianbiotch.com in Dock
-- [ ] Redirect bohemianbiotch.com to www.*
+- [x] Redirect www.bohemianbiotch.com to bohemianbiotch.com w/ HTTPS
 - [ ] Add Preview in Dock to reopen Exhibition
 - [ ] Add Firefox to reopen Github
 - [x] Incorporate react-tetris
