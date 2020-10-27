@@ -54,7 +54,10 @@ function DockContainer({ setEmail, setVpn, setTetris }) {
   // }
 
   function showWritings() {
-    alert("writings. restricted section.");
+    var password = prompt("Password Please", "or hack me ;]");
+    if (password === "1234") {
+      window.open("https://bohemianbiotch.com/");
+    }
   }
 
   function showTetris() {
