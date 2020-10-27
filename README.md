@@ -1,6 +1,6 @@
 ## Roadmap
-- [ ] Add protected writing section
-- [ ] Integrate www.bohemianbiotch.com in Dock
+- [x] Add protected writing section
+- [x] Integrate www.bohemianbiotch.com in Dock
 - [x] Redirect www.bohemianbiotch.com to bohemianbiotch.com w/ HTTPS
 - [ ] Add Preview in Dock to reopen Exhibition
 - [ ] Add Firefox to reopen Github
