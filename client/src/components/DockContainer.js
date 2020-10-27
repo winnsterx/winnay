@@ -9,6 +9,7 @@ import nord from "../images/dock_images/nord.png";
 import directory from "../images/dock_images/directory.png";
 import firefox from "../images/dock_images/firefox.png";
 import tetris from "../images/dock_images/tetris.png";
+import potato from "../images/dock_images/potato.png";
 import terminal from "../images/dock_images/terminal.png";
 import trash from "../images/dock_images/trash.png";
 
@@ -22,6 +23,7 @@ const items = [
   terminal,
   firefox,
   tetris,
+  potato,
   directory,
   trash,
 ];
@@ -30,6 +32,10 @@ function DockContainer({ setEmail, setVpn, setTetris }) {
   function sendEmail() {
     // alert("Send Winnie an Email");
     setEmail(true);
+  }
+
+  function showFarm() {
+    window.open("https://bohemianbiotch.com/");
   }
 
   function showLocation() {
@@ -43,9 +49,9 @@ function DockContainer({ setEmail, setVpn, setTetris }) {
     );
   }
 
-  function showBooks() {
-    alert("Books im reading");
-  }
+  // function showBooks() {
+  //   alert("Books im reading");
+  // }
 
   function showWritings() {
     alert("writings. restricted section.");
@@ -72,13 +78,13 @@ function DockContainer({ setEmail, setVpn, setTetris }) {
         showLocation();
         break;
       case 5:
-        showBooks();
-        break;
       case 6:
       case 7:
         showTetris();
         break;
       case 8:
+        showFarm();
+        break;
       case 9:
       default:
     }
