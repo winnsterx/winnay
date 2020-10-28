@@ -21,7 +21,7 @@ function Desktop() {
   ) : (
     <div className="Desktop">
       ​{github && <Software setGithub={setGithub} />}​
-      {exhibit && <Exhibition setExhibit={setExhibit} />}​
+      {exhibit && <Exhibition exhibit={exhibit} setExhibit={setExhibit} />}​
       {email && <Email email={email} setEmail={setEmail} />}​
       {vpn && <Vpn vpn={vpn} setVpn={setVpn} />}
       {tetris && <TetrisContainer tetris={tetris} setTetris={setTetris} />}
@@ -30,6 +30,8 @@ function Desktop() {
         setEmail={setEmail}
         setVpn={setVpn}
         setTetris={setTetris}
+        setExhibit={setExhibit}
+        setGithub={setGithub}
       />
       ​
     </div>

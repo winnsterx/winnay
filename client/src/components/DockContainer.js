@@ -12,6 +12,7 @@ import tetris from "../images/dock_images/tetris.png";
 import potato from "../images/dock_images/potato.png";
 import terminal from "../images/dock_images/terminal.png";
 import trash from "../images/dock_images/trash.png";
+import preview from "../images/dock_images/preview.png";
 
 // See https://lukehorvat.github.io/react-osx-dock/ for example usage
 const items = [
@@ -24,11 +25,12 @@ const items = [
   firefox,
   tetris,
   potato,
+  preview,
   directory,
   trash,
 ];
 
-function DockContainer({ setEmail, setVpn, setTetris }) {
+function DockContainer({ setEmail, setVpn, setTetris, setExhibit, setGithub }) {
   function sendEmail() {
     // alert("Send Winnie an Email");
     setEmail(true);
@@ -64,6 +66,14 @@ function DockContainer({ setEmail, setVpn, setTetris }) {
     setTetris(true);
   }
 
+  function showExhibit() {
+    setExhibit(true);
+  }
+
+  function showGithub() {
+    setGithub(true);
+  }
+
   function selectMethod(e) {
     let index = parseInt(e.target.id);
     switch (index) {
@@ -83,6 +93,7 @@ function DockContainer({ setEmail, setVpn, setTetris }) {
       case 5:
         break;
       case 6:
+        showGithub();
         break;
       case 7:
         showTetris();
@@ -91,8 +102,11 @@ function DockContainer({ setEmail, setVpn, setTetris }) {
         showFarm();
         break;
       case 9:
+        showExhibit();
         break;
       case 10:
+        break;
+      case 11:
         break;
       default:
     }
