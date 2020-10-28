@@ -9,7 +9,7 @@ import nord from "../images/dock_images/nord.png";
 import directory from "../images/dock_images/directory.png";
 import firefox from "../images/dock_images/firefox.png";
 import tetris from "../images/dock_images/tetris.png";
-import potato from "../images/dock_images/potato.png";
+import farm from "../images/dock_images/farm.png";
 import terminal from "../images/dock_images/terminal.png";
 import trash from "../images/dock_images/trash.png";
 import preview from "../images/dock_images/preview.png";
@@ -24,7 +24,7 @@ const items = [
   terminal,
   firefox,
   tetris,
-  potato,
+  farm,
   preview,
   directory,
   trash,
@@ -78,6 +78,7 @@ function DockContainer({ setEmail, setVpn, setTetris, setExhibit, setGithub }) {
     let index = parseInt(e.target.id);
     switch (index) {
       case 0:
+        break;
       case 1:
         showWritings();
         break;
@@ -107,6 +108,7 @@ function DockContainer({ setEmail, setVpn, setTetris, setExhibit, setGithub }) {
       case 10:
         break;
       case 11:
+        alert("1-800-GOT-JUNK?");
         break;
       default:
     }

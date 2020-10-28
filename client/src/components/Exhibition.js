@@ -1,6 +1,6 @@
 import React from "react";
 import BrowserFrame from "react-browser-frame";
-import uw from "../images/uw.jpg";
+import currexhibit from "../images/currexhibit.jpg";
 
 function Exhibition({ setExhibit }) {
   return (
@@ -8,7 +8,11 @@ function Exhibition({ setExhibit }) {
       <BrowserFrame visible={true} setVisible={setExhibit}>
         {/* Use React Router to turn image into a link */}
         <a href="https://artxspot.winnay.com">
-          <img src={uw} alt="current exhibition: to come!" width="600px" />
+          <img
+            src={currexhibit}
+            alt="current exhibition: coming soon"
+            width="600px"
+          />
         </a>
       </BrowserFrame>
     </div>

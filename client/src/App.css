@@ -38,6 +38,7 @@ body,
   position: fixed;
   top: 45%;
   left: 50%;
+  border-radius: 5px;
   transform: translate(-50%, -50%);
   -webkit-transform: translate(-50%, -50%);
   -moz-transform: translate(-50%, -50%);
