@@ -19,17 +19,17 @@ function Loading({ setLoading }) {
   return (
     <div className="loading">
       <img className="profile-circular" src={profile} alt="Profile" />
-      <h4 className="username">WINNAY X</h4>
+      <h4 className="username">winnayx</h4>
       <Line
         percent={percent}
-        strokeWidth="2"
-        trailWidth="2"
+        strokeWidth="1.5"
+        trailWidth="1.5"
         strokeColor="white"
         trailColor="rgba(162, 169, 171, 0.6)"
         strokeLinecap="round"
         style={{
-          width: "40%",
-          opacity: "1",
+          width: "20%",
+          opacity: "0.8",
         }}
       />
     </div>

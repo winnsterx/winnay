@@ -81,7 +81,9 @@ function DockContainer({ setEmail, setVpn, setTetris }) {
         showLocation();
         break;
       case 5:
+        break;
       case 6:
+        break;
       case 7:
         showTetris();
         break;
@@ -89,6 +91,9 @@ function DockContainer({ setEmail, setVpn, setTetris }) {
         showFarm();
         break;
       case 9:
+        break;
+      case 10:
+        break;
       default:
     }
   }
