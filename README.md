@@ -1,8 +1,8 @@
 ## Roadmap
 - [ ] Brainstorm details and concept of exhibit (name, idea, medium, curation)
 - [ ] Complete primary rendition of exhibit
-- [ ] Add Preview in Dock to reopen Exhibition
-- [ ] Add Firefox to reopen Github
+- [x] Add Preview in Dock to reopen Exhibition
+- [x] Add Firefox to reopen Github
 - [x] Add protected writing section
 - [x] Integrate www.bohemianbiotch.com in Dock
 - [x] Redirect www.bohemianbiotch.com to bohemianbiotch.com w/ HTTPS
