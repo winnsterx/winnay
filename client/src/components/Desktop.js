@@ -14,7 +14,7 @@ function Desktop() {
   const [tetris, setTetris] = useState(false);
 
   const [exhibit, setExhibit] = useState(true);
-  const [github, setGithub] = useState(true);
+  const [github, setGithub] = useState(false);
 
   return loading ? (
     <Loading setLoading={setLoading} />
