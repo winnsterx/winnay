@@ -1,5 +1,6 @@
 ## Roadmap
 - [ ] Brainstorm details and concept of exhibit (name, idea, medium, curation)
+- [ ] Work on sketches
 - [ ] Complete primary rendition of exhibit
 - [x] Add Preview in Dock to reopen Exhibition
 - [x] Add Firefox to reopen Github
