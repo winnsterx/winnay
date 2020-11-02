@@ -1,4 +1,5 @@
 ## Roadmap
+
 - [ ] Add Projects Folder
 - [ ] Add Experience Folder (see don.gg) w/ clickable icons to open up details in another window
 - [ ] Make components draggable
@@ -9,15 +10,15 @@
 - [x] Change tab logo to [WX]
 - [ ] Obtain feedback and suggestions for personal site
 - [ ] ~~Make GitHub page interactive~~ --> demoing projects through terminal react
-- [ ] Change Firefox (not link interactive) to include an iframe of some sort 
-- [x] Add Github Desktop to Dock 
+- [ ] Change Firefox (not link interactive) to include an iframe of some sort
+- [x] Add Github Desktop to Dock
 - [ ] Incorporate art-resume and work-resume
 - [ ] Incorporate "currently-doing" creatively
 - [ ] Add writing page
 - [ ] Get feedback on landing page (nothing or yes)
 - [ ] Update Bohemian Life w articles and about me page
 - [ ] Fix tabs z-index problems (should be flexible)
-- [ ] Update current location to Firenze
+- [x] Update current location to Firenze
 - [ ] Brainstorm details and concept of exhibit (name, idea, medium, curation)
 - [ ] Complete primary rendition of exhibit
 - [x] Work on sketches
@@ -37,26 +38,21 @@
 - [x] Add Desktop background
 - [x] Speed up loading of images
 
-
-
 ## v1.2 (KP Fellowship)
 
 - Demonstrate a cohesive spike in arts x technology
 
-
-
 ## v1.1
 
-1. Protected writing section (writings.winnay.com) 
+1. Protected writing section (writings.winnay.com)
 
    - "Use password or hack me ;]"
+
 2. Making window components draggable (/ closable)
 3. Populating dock functions
 4. Add preview to reopen windows
 5. Add features to react-browser-frame
 6. Incorporate react-tetris as dock component
-
-
 
 ## v1.0
 
@@ -64,13 +60,11 @@
    - Email Me
    - Spotify
    - VPN, my current location
-2. Curated exhibition 
+2. Curated exhibition
    - Need to think of focus
 3. Loading page (analogous to Mac)
 4. Adding classic / customised Desktop background
-5. Speed up the loading of images 
-
- 
+5. Speed up the loading of images
 
 ## Content of the site
 

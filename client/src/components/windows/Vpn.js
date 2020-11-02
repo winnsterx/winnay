@@ -6,13 +6,13 @@ function Vpn({ vpn, setVpn }) {
   return (
     <div className="vpn">
       <BrowserFrame
-        url="Currently://Amsterdam, The Netherlands"
+        url="Currently:// Firenze, Toscana, Italy"
         visible={vpn}
         setVisible={setVpn}
       >
         <img
           src={map}
-          alt="my location: Amsterdam"
+          alt="my location: Florence Italy"
           width="710px"
           height="380px"
         />
