@@ -6,13 +6,14 @@ import note from "../images/dock_images/notes.png";
 import mail from "../images/dock_images/mail.png";
 import spotify from "../images/dock_images/spotify.png";
 import nord from "../images/dock_images/nord.png";
-import directory from "../images/dock_images/directory.png";
+import projects from "../images/dock_images/projects.png";
 import firefox from "../images/dock_images/firefox.png";
 import tetris from "../images/dock_images/tetris.png";
 import farm from "../images/dock_images/farm.png";
 import terminal from "../images/dock_images/terminal.png";
 import trash from "../images/dock_images/trash.png";
 import preview from "../images/dock_images/preview.png";
+import github from "../images/dock_images/github.png";
 
 // See https://lukehorvat.github.io/react-osx-dock/ for example usage
 const items = [
@@ -25,12 +26,16 @@ const items = [
   firefox,
   tetris,
   farm,
+  github,
   preview,
-  directory,
+  projects,
   trash,
 ];
 
 function DockContainer({ setEmail, setVpn, setTetris, setExhibit, setGithub }) {
+  function showAboutMe() {
+    alert("About Me");
+  }
   function sendEmail() {
     // alert("Send Winnie an Email");
     setEmail(true);
@@ -51,10 +56,6 @@ function DockContainer({ setEmail, setVpn, setTetris, setExhibit, setGithub }) {
     );
   }
 
-  // function showBooks() {
-  //   alert("Books im reading");
-  // }
-
   function showWritings() {
     var password = prompt("Password Please", "or hack me ;]");
     if (password === "1234") {
@@ -71,6 +72,10 @@ function DockContainer({ setEmail, setVpn, setTetris, setExhibit, setGithub }) {
   }
 
   function showGithub() {
+    window.open("https://github.com/winnayx");
+  }
+
+  function showProjects() {
     setGithub(true);
   }
 
@@ -78,6 +83,7 @@ function DockContainer({ setEmail, setVpn, setTetris, setExhibit, setGithub }) {
     let index = parseInt(e.target.id);
     switch (index) {
       case 0:
+        showAboutMe();
         break;
       case 1:
         showWritings();
@@ -94,7 +100,6 @@ function DockContainer({ setEmail, setVpn, setTetris, setExhibit, setGithub }) {
       case 5:
         break;
       case 6:
-        showGithub();
         break;
       case 7:
         showTetris();
@@ -103,14 +108,19 @@ function DockContainer({ setEmail, setVpn, setTetris, setExhibit, setGithub }) {
         showFarm();
         break;
       case 9:
-        showExhibit();
+        showGithub();
         break;
       case 10:
+        showExhibit();
         break;
       case 11:
+        showProjects();
+        break;
+      case 12:
         alert("1-800-GOT-JUNK?");
         break;
       default:
+        break;
     }
   }
   return (
