@@ -1,7 +1,26 @@
 ## Roadmap
+- [ ] Add Projects Folder
+- [ ] Add Experience Folder (see don.gg) w/ clickable icons to open up details in another window
+- [ ] Make components draggable
+- [ ] Change background to linear-gradient + animation
+- [ ] Migrate/edit materials from https://yongyix.wixsite.com/artportfolio
+- [ ] Current favourite artists, musicians, programmers
+- [ ] Add About Me page (name, education, past experiences, currently up-to)
+- [x] Change tab logo to [WX]
+- [ ] Obtain feedback and suggestions for personal site
+- [ ] ~~Make GitHub page interactive~~ --> demoing projects through terminal react
+- [ ] Change Firefox (not link interactive) to include an iframe of some sort 
+- [x] Add Github Desktop to Dock 
+- [ ] Incorporate art-resume and work-resume
+- [ ] Incorporate "currently-doing" creatively
+- [ ] Add writing page
+- [ ] Get feedback on landing page (nothing or yes)
+- [ ] Update Bohemian Life w articles and about me page
+- [ ] Fix tabs z-index problems (should be flexible)
+- [ ] Update current location to Firenze
 - [ ] Brainstorm details and concept of exhibit (name, idea, medium, curation)
-- [ ] Work on sketches
 - [ ] Complete primary rendition of exhibit
+- [x] Work on sketches
 - [x] Add Preview in Dock to reopen Exhibition
 - [x] Add Firefox to reopen Github
 - [x] Add protected writing section
@@ -17,6 +36,12 @@
 - [x] Design current exhibition
 - [x] Add Desktop background
 - [x] Speed up loading of images
+
+
+
+## v1.2 (KP Fellowship)
+
+- Demonstrate a cohesive spike in arts x technology
 
 
 
