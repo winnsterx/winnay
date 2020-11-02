@@ -1,6 +1,6 @@
 ## Roadmap
 
-- [ ] Add Projects Folder
+- [x] ~~Add Projects Folder~~ Making into a terminal interactive experience (an experiment in itself, should get user feedback)
 - [ ] Add Experience Folder (see don.gg) w/ clickable icons to open up details in another window
 - [ ] Make components draggable
 - [ ] Change background to linear-gradient + animation
@@ -9,7 +9,7 @@
 - [ ] Add About Me page (name, education, past experiences, currently up-to)
 - [x] Change tab logo to [WX]
 - [ ] Obtain feedback and suggestions for personal site
-- [ ] ~~Make GitHub page interactive~~ --> demoing projects through terminal react
+- [x] ~~Make GitHub page interactive~~ --> demoing projects through terminal react
 - [ ] Change Firefox (not link interactive) to include an iframe of some sort
 - [x] Add Github Desktop to Dock
 - [ ] Incorporate art-resume and work-resume
