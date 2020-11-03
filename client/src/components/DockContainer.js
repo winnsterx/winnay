@@ -32,7 +32,14 @@ const items = [
   trash,
 ];
 
-function DockContainer({ setEmail, setVpn, setTetris, setExhibit, setGithub }) {
+function DockContainer({
+  setEmail,
+  setVpn,
+  setTetris,
+  setExhibit,
+  setGithub,
+  setTerminal,
+}) {
   function showAboutMe() {
     alert("About Me");
   }
@@ -79,6 +86,10 @@ function DockContainer({ setEmail, setVpn, setTetris, setExhibit, setGithub }) {
     setGithub(true);
   }
 
+  function showTerminal() {
+    setTerminal(true);
+  }
+
   function selectMethod(e) {
     let index = parseInt(e.target.id);
     switch (index) {
@@ -98,6 +109,7 @@ function DockContainer({ setEmail, setVpn, setTetris, setExhibit, setGithub }) {
         showLocation();
         break;
       case 5:
+        showTerminal();
         break;
       case 6:
         break;

@@ -6,7 +6,7 @@ import Loading from "./Loading";
 import Email from "./windows/Email";
 import Vpn from "./windows/Vpn";
 import TetrisContainer from "./windows/TetrisContainer";
-import TerminalContainer from "./windows/Terminal";
+import TerminalContainer from "./windows/TerminalContainer";
 
 function Desktop() {
   const [loading, setLoading] = useState(true);
@@ -24,13 +24,14 @@ function Desktop() {
       {email && <Email email={email} setEmail={setEmail} />}​
       {vpn && <Vpn vpn={vpn} setVpn={setVpn} />}
       {tetris && <TetrisContainer tetris={tetris} setTetris={setTetris} />}
-      ​<TerminalContainer />
+      {terminal && <TerminalContainer setTerminal={setTerminal} />}
       <DockContainer
         setEmail={setEmail}
         setVpn={setVpn}
         setTetris={setTetris}
         setExhibit={setExhibit}
         setGithub={setGithub}
+        setTerminal={setTerminal}
       />
       ​
     </div>
