@@ -1,5 +1,6 @@
 ## Roadmap
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 - [x] ~~Add Projects Folder~~ Making into a terminal interactive experience (an experiment in itself, should get user feedback)
 =======
@@ -7,11 +8,16 @@
 - [x] Add Projects Folder -->> Making into a terminal interactive experience (an experiment in itself, should get user feedback)
 >>>>>>> 9a8f0d0... Update README.md
 - [ ] Add Experience Folder (see don.gg) w/ clickable icons to open up details in another window
+=======
+- [x] In startup msg, add intro to basic commands (skills, projects, etc) for non-technical visitors
+- [x] Add Projects Folder -->> Making into a terminal interactive experience (an experiment in itself, should get user feedback)
+- [x] Add Experience Folder (see don.gg) w/ clickable icons to open up details in another window -->> incorporated in terminal
+>>>>>>> 8ebd3b6... Update README.md
 - [ ] Make components draggable
 - [ ] Change background to linear-gradient + animation
 - [ ] Migrate/edit materials from https://yongyix.wixsite.com/artportfolio
 - [ ] Current favourite artists, musicians, programmers
-- [ ] Add About Me page (name, education, past experiences, currently up-to)
+- [x] Add About Me page (name, education, past experiences, currently up-to)
 - [x] Change tab logo to [WX]
 - [ ] Obtain feedback and suggestions for personal site
 - [x] ~~Make GitHub page interactive~~ --> demoing projects through terminal react
