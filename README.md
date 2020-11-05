@@ -1,37 +1,31 @@
 ## Roadmap
-<<<<<<< HEAD
-<<<<<<< HEAD
 
 - [x] ~~Add Projects Folder~~ Making into a terminal interactive experience (an experiment in itself, should get user feedback)
-=======
-- [ ] In startup msg, add intro to basic commands (skills, projects, etc) for non-technical visitors
-- [x] Add Projects Folder -->> Making into a terminal interactive experience (an experiment in itself, should get user feedback)
->>>>>>> 9a8f0d0... Update README.md
-- [ ] Add Experience Folder (see don.gg) w/ clickable icons to open up details in another window
-=======
 - [x] In startup msg, add intro to basic commands (skills, projects, etc) for non-technical visitors
 - [x] Add Projects Folder -->> Making into a terminal interactive experience (an experiment in itself, should get user feedback)
 - [x] Add Experience Folder (see don.gg) w/ clickable icons to open up details in another window -->> incorporated in terminal
->>>>>>> 8ebd3b6... Update README.md
 - [ ] Make components draggable
 - [ ] Change background to linear-gradient + animation
 - [ ] Migrate/edit materials from https://yongyix.wixsite.com/artportfolio
 - [ ] Current favourite artists, musicians, programmers
-- [x] Add About Me page (name, education, past experiences, currently up-to)
-- [x] Change tab logo to [WX]
 - [ ] Obtain feedback and suggestions for personal site
-- [x] ~~Make GitHub page interactive~~ --> demoing projects through terminal react
 - [ ] Change Firefox (not link interactive) to include an iframe of some sort
-- [x] Add Github Desktop to Dock
+- [ ] Brainstorm details and concept of exhibit (name, idea, medium, curation)
+- [ ] Complete primary rendition of exhibit
 - [ ] Incorporate art-resume and work-resume
 - [ ] Incorporate "currently-doing" creatively
 - [ ] Add writing page
 - [ ] Get feedback on landing page (nothing or yes)
 - [ ] Update Bohemian Life w articles and about me page
 - [ ] Fix tabs z-index problems (should be flexible)
+- [x] In startup msg, add intro to basic commands (skills, projects, etc) for non-technical visitors
+- [x] Add Projects Folder -->> Making into a terminal interactive experience (an experiment in itself, should get user feedback)
+- [x] Add Experience Folder (see don.gg) w/ clickable icons to open up details in another window -->> incorporated in terminal
+- [x] Add About Me page (name, education, past experiences, currently up-to)
+- [x] Change tab logo to [WX]
+- [x] Make GitHub page interactive --> demoing projects through terminal react
+- [x] Add Github Desktop to Dock
 - [x] Update current location to Firenze
-- [ ] Brainstorm details and concept of exhibit (name, idea, medium, curation)
-- [ ] Complete primary rendition of exhibit
 - [x] Work on sketches
 - [x] Add Preview in Dock to reopen Exhibition
 - [x] Add Firefox to reopen Github
