@@ -116,9 +116,31 @@ body,
   display: flex;
   justify-content: center;
   align-self: flex-end;
-  background: url(images/desktop.jpg);
-  background-size: cover;
+  /* background: url(images/desktop.jpg); */
+  background: linear-gradient(
+    45deg,
+    pink,
+    yellow,
+    rgb(255, 166, 0),
+    rgb(0, 166, 255),
+    purple,
+    red
+  );
+  animation: change 20s ease-in-out infinite;
+  background-size: 400% 400%;
   background-position: center;
+}
+
+@keyframes change {
+  0% {
+    background-position: 20% 0%;
+  }
+  50% {
+    background-position: 50% 100%;
+  }
+  100% {
+    background-position: 20% 0%;
+  }
 }
 
 .loading {
@@ -126,7 +148,8 @@ body,
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  background: url(images/desktop-blur.jpg);
+  /* background: url(images/desktop-blur.jpg); */
+  background: linear-gradient(45deg, rgb(254, 199, 96), rgb(157, 221, 255));
   background-size: cover;
   background-position: center;
 }
