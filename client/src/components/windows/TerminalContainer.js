@@ -26,12 +26,16 @@ function TerminalContainer({ setTerminal }) {
         commands={{
           projects: (args, print, runCommand) => {
             print(
-              "recent projects:\nArtxSpot      weatherFM    qinti\nwinnay.com    pintos    fibbing_reproduction\n\ncd [project_name] to learn more about specific projects"
+              "recent projects:\nArtxSpot      weatherFM    qinti\nwinnay    pintos    fibbing\n\ncd [project_name] to learn more about specific projects"
             );
           },
           bg: (args, print, runCommand) => {
             print(
-              "Stanford University, Palo Alto CA\nB.S. in Computer Science (Computer Systems Track) & B.A. in Art History\nExpected to graduate in June 2022 (currently taking a gap year in Florence Italy ʕ•ᴥ•ʔ)"
+              "1999 to 2012: Guangzhou, China\n" +
+                "2012 to 2017: Toronto, Canada\n" +
+                "2017 to undefined: Stanford, USA\n" +
+                "       B.S. in Computer Science (Computer Systems Track) & B.A. in Art History\n" +
+                "2020 to 2021: gap year with bases in Amsterdam, Florence, Guangzhou, Toronto ʕ•ᴥ•ʔ"
             );
           },
           contact: (args, print, runCommand) => {
@@ -56,18 +60,19 @@ function TerminalContainer({ setTerminal }) {
             print(
               "Google, Chrome Platform Security         Software Engineering Intern, June to Sept 2020\n" +
                 "       * Conducted experiments of using Rust to improve memory safety in Chromium\n" +
-                "       * Worked with open-source tools to translate some critical libraries to Rust\n" +
+                "       * Worked with open-source tools to convert memory-critical libraries to Rust\n" +
                 "       * Created unit tests to ensure retenton of full functionality post-conversion\n" +
-                "Reach Labs                               Software Engineering Intern, June to Sept 2019\n" +
-                "       * Created tracking program with OpenCV to real-time report probe’s location\n" +
+                "Reach Labs, YC S15                     Software Engineering Intern, June to Sept 2019\n" +
+                "       * Created tracking program with OpenCV to live-report probes' coordinates\n" +
                 "       * Built ML models (Keras & scikit-learn) to classify probes and emblems\n" +
-                "       * Architected multiprocessing Python programs to halt powerful charging\n" +
-                "         station upon detection of human\n" +
+                "       * Architected multiprocessing Python programs to halt charging stations\n" +
+                "         upon detection of human\n" +
                 "Stanford Microwave Integrated Circuits Lab        Research Assistant, June to Sept 2018\n" +
-                "       * Prototyped and assembled 2.45GHz RADAR PCB & phase shifter PCB\n" +
+                "       * Prototyped & assembled original 2.45GHz RADAR PCB & phase shifter PCB\n" +
                 "       * Coded Python scripts to convert audio signals to radiowaves at set frequencies\n"
             );
           },
+
           cd: {
             method: (args, print, runCommand) => {
               if (args._[0].toLowerCase().includes("fibbing")) {
@@ -90,6 +95,10 @@ function TerminalContainer({ setTerminal }) {
                 print(
                   "IN PROGRESS. Fun alarm that rings sounds based on your location, time, and weather data. Built with Magenta.js, React, MongoDB, and Express. Currently in deployment stage."
                 );
+              } else if (args._[0].toLowerCase().includes("qinti")) {
+                print(
+                  "I co-created Qinti, a MERN-based scheduling & CRM web platform for local home cleaning businesses. I led a team of engineers & UI/UX designers to develop the web app & conduct user research. Qinti is architected as a microservice ecosystem with cloud-native infrastructure. Deployment and scaling is managed through Docker, Kubernetes, & GCP. For our largest client (based in L.A.), Qinti increases revenue by approx. $6k per month."
+                );
               } else {
                 print("specify a project using cd [project_name]");
               }
@@ -97,9 +106,12 @@ function TerminalContainer({ setTerminal }) {
           },
         }}
         descriptions={{
-          projects: "shows all projects",
+          projects: "show all projects",
           cd: "learn more about a specific project via 'cd [project_name]'",
           skills: "shows existing skills",
+          bg: "show my background",
+          contact: "show contact information",
+          experiences: "show my work experiences",
         }}
         msg={
           "Last login: " +
