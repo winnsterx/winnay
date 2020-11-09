@@ -1,19 +1,16 @@
 ## Roadmap
 
-- [x] ~~Add Projects Folder~~ Making into a terminal interactive experience (an experiment in itself, should get user feedback)
-- [x] In startup msg, add intro to basic commands (skills, projects, etc) for non-technical visitors
-- [x] Add Projects Folder -->> Making into a terminal interactive experience (an experiment in itself, should get user feedback)
-- [x] Add Experience Folder (see don.gg) w/ clickable icons to open up details in another window -->> incorporated in terminal
+- [ ] Add information / guides on how to use on initial launch
 - [ ] Make components draggable
-- [ ] Change background to linear-gradient + animation
+- [x] Change background to linear-gradient + animation
 - [ ] Migrate/edit materials from https://yongyix.wixsite.com/artportfolio
 - [ ] Current favourite artists, musicians, programmers
 - [ ] Obtain feedback and suggestions for personal site
 - [ ] Change Firefox (not link interactive) to include an iframe of some sort
 - [ ] Brainstorm details and concept of exhibit (name, idea, medium, curation)
 - [ ] Complete primary rendition of exhibit
-- [ ] Incorporate art-resume and work-resume
-- [ ] Incorporate "currently-doing" creatively
+- [x] Incorporate art-resume and work-resume -->> dont really wanna put resume on there
+- [x] Incorporate "currently-doing" creatively
 - [ ] Add writing page
 - [ ] Get feedback on landing page (nothing or yes)
 - [ ] Update Bohemian Life w articles and about me page
