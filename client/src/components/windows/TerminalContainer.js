@@ -18,7 +18,11 @@ function TerminalContainer({ setTerminal, left, top, id }) {
   };
 
   return (
-    <div ref={drag} style={{ ...style, left, top }}>
+    <div
+      ref={drag}
+      className="terminal-container"
+      style={{ ...style, left, top }}
+    >
       <Terminal
         color="green"
         backgroundColor="black"

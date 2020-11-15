@@ -11,6 +11,28 @@ body,
   height: 100%;
 }
 
+.about {
+  position: fixed;
+  top: 10%;
+  width: 570px;
+  background: white;
+  border-radius: 5px;
+}
+
+.about-inner {
+  margin: 40px 40px 35px 40px;
+  text-align: left;
+}
+
+.about-icon {
+  float: left;
+  transform: translateY(35%);
+}
+
+.about-info {
+  margin-left: 40%;
+}
+
 .exhibit {
   position: fixed;
   top: 50%;
@@ -35,6 +57,7 @@ body,
 
 .tetris-container {
   background-color: teal;
+  border-radius: 5px;
   /* position: fixed;
   top: 45%;
   left: 50%;
@@ -157,6 +180,13 @@ body,
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.8);
 }
 
+.profile-circular-about {
+  width: 150px;
+  border-radius: 50%;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.8);
+  border: 5px solid lightgrey;
+}
+
 .username {
   letter-spacing: 0.02em;
   margin-top: 1.8em;
@@ -183,6 +213,10 @@ body,
 .dock-img {
   max-width: 100%;
   max-height: 100%;
+}
+
+.terminal-container {
+  border-radius: 5% 5% 0 0;
 }
 
 .terminal-base {

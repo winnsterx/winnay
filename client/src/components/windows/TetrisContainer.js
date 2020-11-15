@@ -1,6 +1,6 @@
 import React from "react";
 import BrowserFrame from "react-browser-frame";
-import { useDrag, useDragDropManager } from "react-dnd";
+import { useDrag } from "react-dnd";
 import Tetris from "react-tetris";
 import { ItemTypes } from "../ItemType";
 

@@ -33,6 +33,7 @@ const items = [
 ];
 
 function DockContainer({
+  setAbout,
   setEmail,
   setVpn,
   setTetris,
@@ -41,10 +42,9 @@ function DockContainer({
   setTerminal,
 }) {
   function showAboutMe() {
-    alert("About Me");
+    setAbout(true);
   }
   function sendEmail() {
-    // alert("Send Winnie an Email");
     setEmail(true);
   }
 

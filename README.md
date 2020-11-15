@@ -1,20 +1,24 @@
 ## Roadmap
 
-- [ ] Add information / guides on how to use on initial launch
-- [ ] Make components draggable
-- [x] Change background to linear-gradient + animation
-- [ ] Migrate/edit materials from https://yongyix.wixsite.com/artportfolio
 - [ ] Current favourite artists, musicians, programmers
-- [ ] Obtain feedback and suggestions for personal site
-- [ ] Change Firefox (not link interactive) to include an iframe of some sort
-- [ ] Brainstorm details and concept of exhibit (name, idea, medium, curation)
 - [ ] Complete primary rendition of exhibit
+- [ ] Change Firefox (not link interactive) to include an iframe to portfolio.winnay.com
+- [x] Hook portfolio.netlify to portfolio.winnay.com
+- [ ] Add to Preview & Application folder
+- [ ] Add z-index responsiveness when app opens up
+- [ ] Resize Drop Target to above dock-container
+- [ ] Limit Drag Target to browser-header
+- [ ] Add z-index responsiveness when app gets dragged
+- [ ] Add writing page
+- [ ] Update Bohemian Life w articles and about me page
+- [ ] Migrate/edit materials from https://yongyix.wixsite.com/artportfolio
+- [x] Get feedback on site -->> continuous process
+- [x] Brainstorm details and concept of exhibit (name, idea, medium, curation)
 - [x] Incorporate art-resume and work-resume -->> dont really wanna put resume on there
 - [x] Incorporate "currently-doing" creatively
-- [ ] Add writing page
-- [ ] Get feedback on landing page (nothing or yes)
-- [ ] Update Bohemian Life w articles and about me page
-- [ ] Fix tabs z-index problems (should be flexible)
+- [x] Add popup window information / guides on how to use on initial launch
+- [x] Make components draggable (with react-dnd)
+- [x] Change background to linear-gradient + animation
 - [x] In startup msg, add intro to basic commands (skills, projects, etc) for non-technical visitors
 - [x] Add Projects Folder -->> Making into a terminal interactive experience (an experiment in itself, should get user feedback)
 - [x] Add Experience Folder (see don.gg) w/ clickable icons to open up details in another window -->> incorporated in terminal
@@ -40,9 +44,9 @@
 - [x] Add Desktop background
 - [x] Speed up loading of images
 
-## v1.2 (KP Fellowship)
+## v1.2
 
-- Demonstrate a cohesive spike in arts x technology
+1. Demonstrate a cohesive spike in arts x technology
 
 ## v1.1
 

@@ -4,7 +4,7 @@ import BrowserFrame from "react-browser-frame";
 import map from "../../images/map.jpg";
 import { ItemTypes } from "../ItemType";
 
-function Vpn({ vpn, setVpn, id, left, top }) {
+function Vpn({ vpn, setVpn, id, left, top, curZIndex }) {
   const [{ isDragging }, drag] = useDrag({
     item: { id, left, top, type: ItemTypes.WINDOW },
     collect: (monitor) => ({
@@ -14,6 +14,7 @@ function Vpn({ vpn, setVpn, id, left, top }) {
   const style = {
     position: "absolute",
     opacity: 1,
+    zIndex: curZIndex,
   };
 
   return (
