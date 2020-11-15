@@ -1,10 +1,23 @@
 import React from "react";
+import { useDrag } from "react-dnd";
 import BrowserFrame from "react-browser-frame";
 import map from "../../images/map.jpg";
+import { ItemTypes } from "../ItemType";
 
-function Vpn({ vpn, setVpn }) {
+function Vpn({ vpn, setVpn, id, left, top }) {
+  const [{ isDragging }, drag] = useDrag({
+    item: { id, left, top, type: ItemTypes.WINDOW },
+    collect: (monitor) => ({
+      isDragging: monitor.isDragging(),
+    }),
+  });
+  const style = {
+    position: "absolute",
+    opacity: 1,
+  };
+
   return (
-    <div className="vpn">
+    <div ref={drag} className="vpn" style={{ ...style, left, top }}>
       <BrowserFrame
         url="Currently:// Firenze, Toscana, Italy"
         visible={vpn}
