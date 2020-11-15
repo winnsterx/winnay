@@ -35,7 +35,7 @@ body,
 
 .tetris-container {
   background-color: teal;
-  position: fixed;
+  /* position: fixed;
   top: 45%;
   left: 50%;
   border-radius: 5px;
@@ -43,7 +43,7 @@ body,
   -webkit-transform: translate(-50%, -50%);
   -moz-transform: translate(-50%, -50%);
   -o-transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%); */
 }
 
 .software {

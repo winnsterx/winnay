@@ -1,11 +1,27 @@
 import React from "react";
 import BrowserFrame from "react-browser-frame";
-
+import { useDrag, useDragDropManager } from "react-dnd";
 import Tetris from "react-tetris";
+import { ItemTypes } from "../ItemType";
 
-function TetrisContainer({ tetris, setTetris }) {
+function TetrisContainer({ tetris, setTetris, left, top, id }) {
+  const [{ isDragging }, drag] = useDrag({
+    item: { id, left, top, type: ItemTypes.WINDOW },
+    collect: (monitor) => ({
+      isDragging: monitor.isDragging(),
+    }),
+  });
+  const style = {
+    position: "absolute",
+    opacity: isDragging ? 0.3 : 1,
+  };
+
   return (
-    <div className="tetris-container">
+    <div
+      ref={drag}
+      className="tetris-container"
+      style={{ ...style, left, top }}
+    >
       <BrowserFrame visible={tetris} setVisible={setTetris}>
         <h1 id="tetris-header">TETRIS YOURSELF</h1>
         <p style={{ color: "white", fontWeight: "300" }}>

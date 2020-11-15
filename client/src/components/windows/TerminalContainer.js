@@ -1,15 +1,24 @@
 import React from "react";
 import Terminal from "terminal-in-react";
+import { useDrag } from "react-dnd";
 
-function TerminalContainer({ setTerminal }) {
+import { ItemTypes } from "../ItemType";
+
+function TerminalContainer({ setTerminal, left, top, id }) {
+  const [{ isDragging }, drag] = useDrag({
+    item: { id, left, top, type: ItemTypes.WINDOW },
+    collect: (monitor) => ({
+      isDragging: monitor.isDragging(),
+    }),
+  });
+  const style = {
+    position: "absolute",
+    height: "70%",
+    opacity: isDragging ? 0.3 : 1,
+  };
+
   return (
-    <div
-      style={{
-        marginTop: "5px",
-        position: "fixed",
-        height: "70%",
-      }}
-    >
+    <div ref={drag} style={{ ...style, left, top }}>
       <Terminal
         color="green"
         backgroundColor="black"

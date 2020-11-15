@@ -15,7 +15,9 @@ import TerminalContainer from "./windows/TerminalContainer";
 
 function Desktop(props) {
   const [windows, setWindows] = useState({
-    vpn: { top: 50, left: 80, title: "Drag me around" },
+    vpn: { top: 50, left: 80, title: "Drag vpn around" },
+    terminal: { top: 50, left: 200 },
+    tetris: { top: 10, left: 300 },
   });
   const [{ isOver }, drop] = useDrop({
     accept: ItemTypes.WINDOW,
@@ -65,8 +67,23 @@ function Desktop(props) {
           top={windows.vpn.top}
         />
       )}
-      {tetris && <TetrisContainer tetris={tetris} setTetris={setTetris} />}
-      {terminal && <TerminalContainer setTerminal={setTerminal} />}
+      {tetris && (
+        <TetrisContainer
+          tetris={tetris}
+          setTetris={setTetris}
+          id={"tetris"}
+          left={windows.tetris.left}
+          top={windows.tetris.top}
+        />
+      )}
+      {terminal && (
+        <TerminalContainer
+          setTerminal={setTerminal}
+          id={"terminal"}
+          left={windows.terminal.left}
+          top={windows.terminal.top}
+        />
+      )}
       <DockContainer
         setEmail={setEmail}
         setVpn={setVpn}
