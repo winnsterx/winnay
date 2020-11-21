@@ -3,7 +3,7 @@ import { useDrag } from "react-dnd";
 import BrowserFrame from "react-browser-frame";
 import { ItemTypes } from "./ItemType";
 
-function Exhibition({ exhibit, setExhibit, id, left, top }) {
+function Farm({ farm, setFarm, id, left, top }) {
   const [{ isDragging }, drag] = useDrag({
     item: { id, left, top, type: ItemTypes.WINDOW },
     collect: (monitor) => ({
@@ -12,24 +12,23 @@ function Exhibition({ exhibit, setExhibit, id, left, top }) {
   });
   const style = {
     position: "absolute",
-    opacity: 1,
     background: "white",
     borderRadius: "5px",
   };
 
   return (
-    <div ref={drag} className="exhibit" style={{ ...style, left, top }}>
+    <div ref={drag} className="farm" style={{ ...style, left, top }}>
       <BrowserFrame
-        visible={exhibit}
-        setVisible={setExhibit}
-        url="portfolio.winnay.com"
+        visible={farm}
+        setVisible={setFarm}
+        url="bohemianbiotch.com"
         height="100%"
       >
         {/* Use React Router to turn image into a link */}
         <iframe
-          src="https://portfolio.winnay.com/"
+          src="https://bohemianbiotch.com/"
           title="Winnie X's portfolio"
-          width="800px"
+          width="500px"
           height="500px"
           style={{ border: 0 }}
         ></iframe>
@@ -38,4 +37,4 @@ function Exhibition({ exhibit, setExhibit, id, left, top }) {
   );
 }
 
-export default Exhibition;
+export default Farm;

@@ -40,6 +40,7 @@ function DockContainer({
   setExhibit,
   setGithub,
   setTerminal,
+  setFarm,
 }) {
   function showAboutMe() {
     setAbout(true);
@@ -49,7 +50,7 @@ function DockContainer({
   }
 
   function showFarm() {
-    window.open("https://bohemianbiotch.com/");
+    setFarm(true);
   }
 
   function showLocation() {

@@ -5,6 +5,7 @@ import { ItemTypes } from "./ItemType";
 
 import About from "./windows/About";
 import Exhibition from "./Exhibition";
+import Farm from "./Farm";
 import Software from "./Software";
 import DockContainer from "./DockContainer";
 import Loading from "./Loading";
@@ -19,7 +20,8 @@ function Desktop(props) {
     vpn: { top: 50, left: 80, title: "Drag vpn around" },
     terminal: { top: 50, left: 200 },
     tetris: { top: 10, left: 300 },
-    exhibit: { top: 10, left: "20%" },
+    exhibit: { top: 10, left: 100 },
+    farm: { top: 10, left: 100 },
   });
   const [{ isOver }, drop] = useDrop({
     accept: ItemTypes.WINDOW,
@@ -56,6 +58,7 @@ function Desktop(props) {
   const [exhibit, setExhibit] = useState(false);
   const [github, setGithub] = useState(false);
   const [terminal, setTerminal] = useState(false);
+  const [farm, setFarm] = useState(false);
 
   // return (
   //   <div ref={drop} className="Desktop">
@@ -118,6 +121,15 @@ function Desktop(props) {
           top={windows.exhibit.top}
         />
       )}
+      {farm && (
+        <Farm
+          farm={farm}
+          setFarm={setFarm}
+          id={"farm"}
+          left={windows.farm.left}
+          top={windows.farm.top}
+        />
+      )}
       ​{email && <Email email={email} setEmail={setEmail} />}​
       {vpn && (
         <Vpn
@@ -154,6 +166,7 @@ function Desktop(props) {
         setExhibit={setExhibit}
         setGithub={setGithub}
         setTerminal={setTerminal}
+        setFarm={setFarm}
       />
       ​
     </div>
