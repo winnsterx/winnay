@@ -1,8 +1,8 @@
 ## Roadmap
 
 - [ ] Current favourite artists, musicians, programmers
-- [ ] Complete primary rendition of exhibit
-- [ ] Change Firefox (not link interactive) to include an iframe to portfolio.winnay.com
+- [x] Complete primary rendition of exhibit --> series one, netherlands
+- [x] Change preview (not link interactive) to include an iframe to portfolio.winnay.com
 - [x] Hook portfolio.netlify to portfolio.winnay.com
 - [ ] Add to Preview & Application folder
 - [ ] Add z-index responsiveness when app opens up

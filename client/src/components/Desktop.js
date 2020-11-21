@@ -19,6 +19,7 @@ function Desktop(props) {
     vpn: { top: 50, left: 80, title: "Drag vpn around" },
     terminal: { top: 50, left: 200 },
     tetris: { top: 10, left: 300 },
+    exhibit: { top: 10, left: "20%" },
   });
   const [{ isOver }, drop] = useDrop({
     accept: ItemTypes.WINDOW,
@@ -108,8 +109,16 @@ function Desktop(props) {
     <div ref={drop} className="Desktop">
       {about && <About about={about} setAbout={setAbout} />}​
       {github && <Software setGithub={setGithub} />}​
-      {exhibit && <Exhibition exhibit={exhibit} setExhibit={setExhibit} />}​
-      {email && <Email email={email} setEmail={setEmail} />}​
+      {exhibit && (
+        <Exhibition
+          exhibit={exhibit}
+          setExhibit={setExhibit}
+          id={"exhibit"}
+          left={windows.exhibit.left}
+          top={windows.exhibit.top}
+        />
+      )}
+      ​{email && <Email email={email} setEmail={setEmail} />}​
       {vpn && (
         <Vpn
           vpn={vpn}

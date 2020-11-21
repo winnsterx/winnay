@@ -1,19 +1,37 @@
 import React from "react";
+import { useDrag } from "react-dnd";
 import BrowserFrame from "react-browser-frame";
-import currexhibit from "../images/currexhibit.jpg";
+import { ItemTypes } from "./ItemType";
 
-function Exhibition({ exhibit, setExhibit }) {
+function Exhibition({ exhibit, setExhibit, id, left, top }) {
+  const [{ isDragging }, drag] = useDrag({
+    item: { id, left, top, type: ItemTypes.WINDOW },
+    collect: (monitor) => ({
+      isDragging: monitor.isDragging(),
+    }),
+  });
+  const style = {
+    position: "absolute",
+    opacity: 1,
+    background: "white",
+    borderRadius: "5px",
+  };
+
   return (
-    <div className="exhibit">
-      <BrowserFrame visible={exhibit} setVisible={setExhibit}>
+    <div ref={drag} className="exhibit" style={{ ...style, left, top }}>
+      <BrowserFrame
+        visible={exhibit}
+        setVisible={setExhibit}
+        url="portfolio.winnay.com/"
+      >
         {/* Use React Router to turn image into a link */}
-        <a href="https://artxspot.winnay.com">
-          <img
-            src={currexhibit}
-            alt="current exhibition: coming soon"
-            width="600px"
-          />
-        </a>
+        <iframe
+          src="https://portfolio.winnay.com/"
+          title="Winnie X's portfolio"
+          width="800px"
+          height="550px"
+          style={{ border: 0 }}
+        ></iframe>
       </BrowserFrame>
     </div>
   );
