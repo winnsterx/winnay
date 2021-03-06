@@ -1,5 +1,6 @@
 ## Roadmap
 
+- [ ] Add Projects list in applications folder
 - [ ] Current favourite artists, musicians, programmers
 - [x] Complete primary rendition of exhibit --> series one, netherlands
 - [x] Change preview (not link interactive) to include an iframe to portfolio.winnay.com

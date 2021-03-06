@@ -1,9 +1,9 @@
 import React from "react";
 import { useDrag } from "react-dnd";
-import BrowserFrame from "react-browser-frame";
-import { ItemTypes } from "./ItemType";
+import { ItemTypes } from "../ItemType";
+import { Browser } from "../styles/lib";
 
-function Farm({ farm, setFarm, id, left, top }) {
+function Exhibition({ exhibit, setExhibit, id, left, top }) {
   const [{ isDragging }, drag] = useDrag({
     item: { id, left, top, type: ItemTypes.WINDOW },
     collect: (monitor) => ({
@@ -12,29 +12,28 @@ function Farm({ farm, setFarm, id, left, top }) {
   });
   const style = {
     position: "absolute",
+    opacity: 1,
     background: "white",
     borderRadius: "5px",
   };
 
   return (
-    <div ref={drag} className="farm" style={{ ...style, left, top }}>
-      <BrowserFrame
-        visible={farm}
-        setVisible={setFarm}
-        url="bohemianbiotch.com"
-        height="100%"
+    <div ref={drag} className="exhibit" style={{ ...style, left, top }}>
+      <Browser
+        visible={exhibit}
+        setVisible={setExhibit}
+        url="portfolio.winnay.com"
       >
-        {/* Use React Router to turn image into a link */}
         <iframe
-          src="https://bohemianbiotch.com/"
+          src="https://portfolio.winnay.com/"
           title="Winnie X's portfolio"
-          width="500px"
+          width="800px"
           height="500px"
           style={{ border: 0 }}
         ></iframe>
-      </BrowserFrame>
+      </Browser>
     </div>
   );
 }
 
-export default Farm;
+export default Exhibition;

@@ -1,36 +1,8 @@
 import React from "react";
-
 import Dock from "react-osx-dock";
-import finder from "../images/dock_images/finder.png";
-import note from "../images/dock_images/notes.png";
-import mail from "../images/dock_images/mail.png";
-import spotify from "../images/dock_images/spotify.png";
-import nord from "../images/dock_images/nord.png";
-import projects from "../images/dock_images/projects.png";
-import firefox from "../images/dock_images/firefox.png";
-import tetris from "../images/dock_images/tetris.png";
-import farm from "../images/dock_images/farm.png";
-import terminal from "../images/dock_images/terminal.png";
-import trash from "../images/dock_images/trash.png";
-import preview from "../images/dock_images/preview.png";
-import github from "../images/dock_images/github.png";
+import items from "../images/dock_images/dock_images";
 
 // See https://lukehorvat.github.io/react-osx-dock/ for example usage
-const items = [
-  finder,
-  note,
-  mail,
-  spotify,
-  nord,
-  terminal,
-  firefox,
-  tetris,
-  farm,
-  github,
-  preview,
-  projects,
-  trash,
-];
 
 function DockContainer({
   setAbout,
@@ -54,7 +26,6 @@ function DockContainer({
   }
 
   function showLocation() {
-    console.log("Setting Location");
     setVpn(true);
   }
 
@@ -67,7 +38,7 @@ function DockContainer({
   function showWritings() {
     var password = prompt("Password Please", "or hack me ;]");
     if (password === "1234") {
-      window.open("https://bohemianbiotch.com/");
+      window.open("https://jokes.com/");
     }
   }
 

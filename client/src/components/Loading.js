@@ -6,7 +6,6 @@ function Loading({ setLoading }) {
   const [percent, setPercent] = useState(0);
 
   useEffect(() => {
-    console.log("Use Effect in Loading called");
     if (percent < 180) {
       setInterval(() => {
         setPercent((percent) => percent + 10);
