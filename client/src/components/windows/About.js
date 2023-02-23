@@ -16,7 +16,7 @@ function About({ about, setAbout }) {
           </div>
           <div className="about-info">
             <h1 style={{ marginBottom: 0 }}>Winnie's macOS</h1>
-            <p>Version 1.2</p>
+            <p>Version 2.1</p>
             <p>
               Hullo&nbsp;
               <span role="img" aria-label="waving-hand">
@@ -27,8 +27,7 @@ function About({ about, setAbout }) {
               apps on the Dock to explore!
             </p>
             <p>
-              It is still in active development. If you have any feedback and
-              suggestion, drop a note using the mail app&nbsp;
+              It is still in active development. Drop a note using the mail app&nbsp;
               <span role="img" aria-label="beer-clinking">
                 🥂💖
               </span>
@@ -44,7 +43,7 @@ function About({ about, setAbout }) {
             marginBottom: "10px",
           }}
         >
-          ™ and © 2020 Winnie Xiao. All Rights Reserved.
+          ™ and © 2023 Winnie Xiao. All Rights Reserved.
         </small>
       </BrowserFrame>
     </div>

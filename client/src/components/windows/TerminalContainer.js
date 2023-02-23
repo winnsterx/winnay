@@ -46,43 +46,33 @@ function TerminalContainer({ setTerminal, left, top, id }) {
             print(
               "1999 to 2012: Guangzhou, China\n" +
                 "2012 to 2017: Toronto, Canada\n" +
-                "2017 to undefined: Stanford, USA\n" +
-                "       B.S. in Computer Science (Computer Systems Track) & B.A. in Art History\n" +
-                "2020 to 2021: gap year with bases in Amsterdam, Florence, Guangzhou, Toronto ʕ•ᴥ•ʔ"
+                "2017 to 2022: Stanford, USA\n" +
+                "       B.S. in Computer Science (Systems) & Minor in Art History\n" +
+                "2022 to undefined: San Francisco, USA \n" + 
+                "       Research Engineer at Bitwise Asset Management \n" 
+
             );
           },
           contact: (args, print, runCommand) => {
             print(
               "try {\n" +
-                "    winniex at stanford period edu\n" +
+                "    winnayx at gmail dot com\n" +
                 "} catch (error) {\n" +
-                "    plus one six five zero five seven five eight six two five\n" +
+                "    at winnay on farcaster\n" +
                 "}"
             );
           },
           skills: (args, print, runCommand) => {
             print(
-              "Languages: JavaScript, Rust, C, C++, Python, TypeScript, Java, SQL, Ruby on Rails\n" +
-                "Frameworks / APIs: React, React Native, Node, Express, MongoDB, Jekyll, Styled-Components, OpenCV, LaTex, Lua, Julia\n" +
-                "Tools: Docker, Docker-Compose, Kubernetes, GCP, Firebase, Heroku, Netlify, AWS, Expo, MySQL, Google Analytics\n" +
-                "Software: EAGLE, SolidWorks, Fusion, Adobe Photoshop & Illustrator, Microsoft Office Suite\n" +
+              "Languages: Rust, Solidity, TypeScript/JS & NodeJS, C, C++, Java\n" +
+                "Frameworks / APIs: web3.js, NextJS, Vercel, React & Express, MongoDB, Jekyll, Styled-Components\n" +
+                "Tools: Truffle, Infura, IPFS/Arweave, Pinata, hardhat, Remix, Firebase, VS Code\n" +
                 "Spoken languages: Mandarin, English, Japanese, Cantonese, & learning Italian"
             );
           },
           experiences: (args, print, runCommand) => {
             print(
-              "Google, Chrome Platform Security         Software Engineering Intern, June to Sept 2020\n" +
-                "       * Conducted experiments of using Rust to improve memory safety in Chromium\n" +
-                "       * Worked with open-source tools to convert memory-critical libraries to Rust\n" +
-                "       * Created unit tests to ensure retenton of full functionality post-conversion\n" +
-                "Reach Labs, YC S15                     Software Engineering Intern, June to Sept 2019\n" +
-                "       * Created tracking program with OpenCV to live-report probes' coordinates\n" +
-                "       * Built ML models (Keras & scikit-learn) to classify probes and emblems\n" +
-                "       * Architected multiprocessing Python programs to halt charging stations\n" +
-                "         upon detection of human\n" +
-                "Stanford Microwave Integrated Circuits Lab        Research Assistant, June to Sept 2018\n" +
-                "       * Prototyped & assembled original 2.45GHz RADAR PCB & phase shifter PCB\n" +
-                "       * Coded Python scripts to convert audio signals to radiowaves at set frequencies\n"
+                "too lazy to put it all up here, ping me for it."
             );
           },
 
@@ -103,14 +93,6 @@ function TerminalContainer({ setTerminal, left, top, id }) {
               } else if (args._[0].toLowerCase().includes("winnay")) {
                 print(
                   "You are on winnay.com, designed and built by Winnie X. Implemented with React, Styled-Components, Express, Node, and sundry other libraires / frameworks."
-                );
-              } else if (args._[0].toLowerCase().includes("weatherfm")) {
-                print(
-                  "IN PROGRESS. Fun alarm that rings sounds based on your location, time, and weather data. Built with Magenta.js, React, MongoDB, and Express. Currently in deployment stage."
-                );
-              } else if (args._[0].toLowerCase().includes("qinti")) {
-                print(
-                  "I co-created Qinti, a MERN-based scheduling & CRM web platform for local home cleaning businesses. I led a team of engineers & UI/UX designers to develop the web app & conduct user research. Qinti is architected as a microservice ecosystem with cloud-native infrastructure. Deployment and scaling is managed through Docker, Kubernetes, & GCP. For our largest client (based in L.A.), Qinti increases revenue by approx. $6k per month."
                 );
               } else {
                 print("specify a project using cd [project_name]");

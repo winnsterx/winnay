@@ -1,5 +1,12 @@
 ## Roadmap
 
+- [x] Update jobs list 
+- [x] Clean up dependencies & speed up development 
+- [ ] Convert js into TypeScript
+- [x] Get rid of ant design
+
+
+
 - [ ] Add Projects list in applications folder
 - [ ] Current favourite artists, musicians, programmers
 - [x] Complete primary rendition of exhibit --> series one, netherlands
