@@ -1,8 +1,9 @@
 ## Roadmap
 
-- [x] Update jobs list 
-- [x] Clean up dependencies & speed up development 
 - [ ] Convert js into TypeScript
+- [ ] Write component for terminal
+- [x] Update jobs list 
+- [x] Clean up dependencies & speed up development
 - [x] Get rid of ant design
 
 

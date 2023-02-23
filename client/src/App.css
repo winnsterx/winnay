@@ -3,11 +3,21 @@ body,
 #root,
 .App,
 .Desktop,
-.loading,
-.Email {
+.loading {
   width: 100%;
   height: 100%;
 }
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont;
+  font-size: 13px;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
 
 .about {
   position: fixed;
@@ -24,33 +34,10 @@ body,
 
 .about-icon {
   float: left;
-  transform: translateY(35%);
 }
 
 .about-info {
   margin-left: 40%;
-}
-
-.exhibit {
-  /* position: fixed;
-  top: 50%;
-  left: 30%;
-  transform: translate(-50%, -50%);
-  -webkit-transform: translate(-50%, -50%);
-  -moz-transform: translate(-50%, -50%);
-  -o-transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%); */
-}
-
-.vpn {
-  /* position: fixed;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  -webkit-transform: translate(-50%, -50%);
-  -moz-transform: translate(-50%, -50%);
-  -o-transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%); */
 }
 
 .tetris-container {
@@ -78,20 +65,8 @@ body,
   -ms-transform: translate(-50%, -50%);
 }
 
-.Email {
-  position: absolute;
-}
-
-#email-form {
-  margin-top: 10px;
-}
-
 .App {
   text-align: center;
-}
-
-.ant-modal-content {
-  border-radius: 20px;
 }
 
 .browser-frame {
@@ -280,3 +255,4 @@ body,
 .piece-preview {
   background-color: #eee;
 }
+

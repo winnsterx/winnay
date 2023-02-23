@@ -43,7 +43,7 @@ function Desktop(props) {
     );
   };
 
-  const [loading, setLoading] = useState(false);
+  const [loading, setLoading] = useState(true);
   const [about, setAbout] = useState(true);
   const [tetris, setTetris] = useState(false);
   const [exhibit, setExhibit] = useState(false);
