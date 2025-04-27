@@ -18,16 +18,19 @@ function About({ about, setAbout }) {
             <h1 style={{ marginBottom: 0 }}>Winnie's macOS</h1>
             <p>Version 2.1</p>
             <p>
-              Hullo&nbsp;
+              Hullo, I'm Winnie.&nbsp;
               <span role="img" aria-label="waving-hand">
                 👋
               </span>
-              ! You are visiting my personal website. If you use a Mac, then
-              navigate as you would on your Desktop. Otherwise, click on the
-              apps on the Dock to explore!
             </p>
             <p>
-              It is still in active development. Drop a note using the mail app&nbsp;
+              I'm currently an engineer at OP Labs, figuring out how to build a
+              better internet with the right incentives. Before that, I was
+              doing MEV/HFT research and open-source work at Bitwise.
+            </p>
+            <p>
+              This site is under active development. Drop a note using the mail
+              app&nbsp;
               <span role="img" aria-label="beer-clinking">
                 🥂💖
               </span>
@@ -43,7 +46,7 @@ function About({ about, setAbout }) {
             marginBottom: "10px",
           }}
         >
-          ™ and © 2023 Winnie Xiao. All Rights Reserved.
+          ™ and © 2023-2025 Winnie Xiao. All Rights Reserved.
         </small>
       </BrowserFrame>
     </div>
